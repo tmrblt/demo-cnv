@@ -1,3 +1,4 @@
+```bash
 userData: |
   #cloud-config
   system_info:
@@ -20,4 +21,4 @@ userData: |
     - echo ORACLE_HOME=/opt/oracle/product/23c/dbhomeFree >> /etc/environment
     - echo ORACLE_SID=FREE >> /etc/environment
     - echo ORAENV_ASK=NO >> /etc/environment
-
+```
