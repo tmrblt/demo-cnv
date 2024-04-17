@@ -1,3 +1,4 @@
+# https://infohub.delltechnologies.com/en-US/l/red-hat-openshift-4-12-deployment-on-dell-powerflex-4-5/steps-to-deploy-the-openshift-cluster-1/
 # https://infohub.delltechnologies.com/en-US/l/red-hat-openshift-4-12-deployment-on-dell-powerflex-4-5/openshift-ingress-api-network-configuration-2/1/
 interfaces:
 - name: ens2f0
