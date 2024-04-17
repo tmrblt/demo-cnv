@@ -1,0 +1,5 @@
+- https://www.youtube.com/watch?v=K-PYMlh5aGs
+- https://access.redhat.com/documentation/en-us/assisted_installer_for_openshift_container_platform/2024/html-single/installing_openshift_container_platform_with_the_assisted_installer/index#example_of_nmstate_configuration
+- https://infohub.delltechnologies.com/en-US/l/red-hat-openshift-4-12-deployment-on-dell-powerflex-4-5/openshift-ingress-api-network-configuration-2/1/
+- https://infohub.delltechnologies.com/en-US/l/red-hat-openshift-4-12-deployment-on-dell-powerflex-4-5/steps-to-deploy-the-openshift-cluster-1/
+- https://amperecomputing.com/tutorials/deploy-red-hat-openShift-4.11-3-node-compact-cluster-with-assisted-installer-on-ampere
