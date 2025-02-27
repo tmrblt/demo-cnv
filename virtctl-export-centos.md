@@ -25,7 +25,7 @@ sudo yum install podman libguestfs-tools -y
 #install web-server
 sudo dnf install httpd -y
 sudo systemctl enable httpd
-sudo syatemctl start httpd
+sudo systemctl start httpd
 
 sudo dnf install firewalld -y
 sudo systemctl enable firewalld
