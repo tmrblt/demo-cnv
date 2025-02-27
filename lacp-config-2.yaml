@@ -1,0 +1,96 @@
+apiVersion: nmstate.io/v1
+kind: NodeNetworkConfigurationPolicy
+metadata:
+  name: master0-policy
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: master0.ocp-test.example.com
+  desiredState:      
+    interfaces:
+    - name: enp103s0f0
+      description: Ethernet enp103s0f0
+      type: ethernet
+      state: up
+      ipv4:
+        enabled: false
+      mtu: 9000
+    - name: ienp103s0f0.21
+      description: vlan 21 using ienp103s0f0
+      type: vlan
+      state: up
+      vlan:
+        base-iface: enp103s0f0
+        id: 21
+      mtu: 9000
+    - name: ienp103s0f0.22
+      description: vlan 22 using ienp103s0f0
+      type: vlan
+      state: up
+      vlan:
+        base-iface: enp103s0f0
+        id: 22
+      mtu: 9000
+    - name: ienp103s0f0.23
+      description: vlan 23 using ienp103s0f0
+      type: vlan
+      state: up
+      vlan:
+        base-iface: enp103s0f0
+        id: 23
+      mtu: 9000
+    - name: ienp103s0f0.93
+      description: vlan 93 using ienp103s0f0
+      type: vlan
+      state: up
+      vlan:
+        base-iface: enp103s0f0
+        id: 93
+      mtu: 9000
+    - name: br21
+      description: Linux bridge with ienp103s0f0.21 as a port
+      type: linux-bridge
+      state: up
+      ipv4:
+        dhcp: false                            
+      bridge:
+        options:
+          stp:
+            enabled: false
+        port:
+          - name: ienp103s0f0.21
+    - name: br22
+      description: Linux bridge with ienp103s0f0.22 as a port
+      type: linux-bridge
+      state: up
+      ipv4:
+        dhcp: false                            
+      bridge:
+        options:
+          stp:
+            enabled: false
+        port:
+          - name: ienp103s0f0.22
+    - name: br23
+      description: Linux bridge with ienp103s0f0.23 as a port
+      type: linux-bridge
+      state: up
+      ipv4:
+        dhcp: false                         
+      bridge:
+        options:
+          stp:
+            enabled: false
+        port:
+          - name: ienp103s0f0.23
+    - name: br93
+      description: Linux bridge with ienp103s0f0.93 as a port
+      type: linux-bridge
+      state: up
+      ipv4:
+        dhcp: false                          
+      bridge:
+        options:
+          stp:
+            enabled: false
+        port:
+          - name: ienp103s0f0.93
